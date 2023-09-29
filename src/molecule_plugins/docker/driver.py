@@ -237,8 +237,8 @@ class Docker(Driver):
 
         log.info("Sanity checks: '%s'", self._name)
         try:
-            import docker
             import requests
+            import docker
 
             docker_client = docker.from_env()
             docker_client.ping()
